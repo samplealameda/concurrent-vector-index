@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Concurrent Updates and Queries on a Graph-Based Vector Index</title>
+</head>
+<body>
+
+<h1>Concurrent Updates and Queries on a Graph-Based Vector Index</h1>
+<p>Hao Zhang, Hongyi Zhang</p>
+
+<h2>Summary</h2>
+<p>We will build an in-memory graph-based approximate nearest neighbor index from scratch in C++ that supports concurrent inserts, deletes, and searches on a single shared Vamana graph, and study how these operations scale on multicore shared-memory CPUs. We will compare synchronization schemes of different granularity and three published ways of repairing the graph after a delete, taken from FreshDiskANN, IP-DiskANN, and CleANN, measuring both recall and throughput.</p>
+
+<h2>Reports</h2>
+<ul>
+<li><a href="proposal.pdf">Proposal</a> (Nov 9)</li>
+<li>Milestone report (Nov 23)</li>
+<li>Final report (Dec 10)</li>
+</ul>
+
+<h2>Schedule</h2>
+<ul>
+<li>Week 1 (Nov 9-15): datasets, ground truth, sequential index</li>
+<li>Week 2 (Nov 16-22): global and per-node locks, workload generator, first deletion strategy, milestone report</li>
+<li>Week 3 (Nov 23-29): remaining two deletion strategies</li>
+<li>Week 4 (Nov 30-Dec 6): scaling experiments and analysis</li>
+<li>Week 5 (Dec 7-11): final report and poster</li>
+</ul>
+
+</body>
+</html>
